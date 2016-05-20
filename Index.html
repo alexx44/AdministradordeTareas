@@ -4,18 +4,23 @@
 <head>
     <meta charset="UTF-8">
     <title>Administrador de Tareas</title>
-    <!-->Libreria Angular desde la web !-->
+    <!--Libreria Angular desde la web !-->
     <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.5.5/angular.min.js"></script>
     <!--Libreria de aplicaion. !-->
     <script src="app/app.js"></script>
+    <scrip src="app/MainCtrl.js"></scrip>
+    
     
 </head>
 <body ng-app="AdministradordeTareas">
-<h1>Bienbenido a este curso de AngularJS</h1>
+<h1>Bienvenido a este curso de AngularJS</h1>
 <p>
     Aqui Aprenderas a crear una aplicaion AngularJS
 </p>
 
-
+<div ng-controller="MainCtrl as vm">
+    {{ vm.saludo}}
+    
+</div>
 </body>
 </html>
