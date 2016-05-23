@@ -1,0 +1,14 @@
+<h1>Bienvenido a este curso de AngularJS</h1>
+<p>
+    Aqui Aprenderas a crear una aplicaion AngularJS
+</p>
+
+<div ng-controller="MainCtrl as vm">
+    <div>
+        <span>{{ vm.saludo }} </span>
+
+    </div>
+    <div>
+        <span ng-bind="vm.despedida"></span>
+    </div>
+</div>
