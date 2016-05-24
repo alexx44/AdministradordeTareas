@@ -20,3 +20,17 @@ body{
 margin-bottom: 0px;
     
 }
+.prioridad-alta, prioridad-media, prioridad-baja{
+    padding: 5px;
+    color: white;
+}
+.prioridad-alta{
+    background-color: red;
+}
+.prioridad-media{
+    background-color: darkorange;
+}
+.prioridad-baja{
+    background-color: green;
+}
+
