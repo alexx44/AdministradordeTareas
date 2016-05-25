@@ -1,6 +1,9 @@
 (function() {
     "use strict";
-    var app = angular.module("AdministradordeTareas",["ui.router"]);
+    var app = angular.module("AdministradordeTareas",
+                             ["ui.router",
+                             "common",
+                             "tareasResourceMock"]);
     
     app.config(["$stateProvider","$urlRouterProvider",
                function($stateProvider, $urlRouterProvider){
@@ -12,7 +15,8 @@
                        })
                    .state("tareas",{
                           URL:"/tareas",
-                          templateUrl: "paginas/tareas.html"
+                          templateUrl: "paginas/tareas.html",
+                          controller: "TareasCtrl as vm"
                        })
                    .state("nuevatarea",{
                           URL:"/nuevatarea",

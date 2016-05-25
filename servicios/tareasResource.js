@@ -6,5 +6,7 @@
             ["$resource",
              tareasResource]);
     
-    
+    function tareasResource($resource){
+        return $resource ("/api/tareas/:tareasId");
+    }
 }())
