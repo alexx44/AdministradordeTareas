@@ -30,47 +30,47 @@ app.run(function($httpBackend){
             "imagenGrande" : "imagenes/IronMan128x128.png"
         },
         "descripcion" : "Crear view para listar Tareas",
-        "estado" : "LISTA",
-        "prioridad" : "MEDIA"
+        "estado" : "PENDIENTE",
+        "prioridad" : "BAJA"
         },
             {
         "tareaId": "3",
         "asignadoA": {
             "usuarioId" :"1",
-            "nombre" : "Steve Rogers",
+            "nombre" : "Loki",
             "puestoId" : "2",
-            "imagenPequena" : "imagenes/CaptainAmerica32x32.png",
-            "imagenGrande" : "imagenes/capitan128x128.png"
+            "imagenPequena" : "imagenes/Loki32x32.png",
+            "imagenGrande" : "imagenes/Loki128x128.png"
         },
         "descripcion" : "Crear view para listar Tareas",
-        "estado" : "LISTA",
+        "estado" : "PROCESO",
         "prioridad" : "BAJA"
         },
                 {
         "tareaId": "4",
         "asignadoA": {
             "usuarioId" :"1",
-            "nombre" : "Steve Rogers",
+            "nombre" : "Loki",
             "puestoId" : "2",
-            "imagenPequena" : "imagenes/CaptainAmerica32x32.png",
-            "imagenGrande" : "imagenes/capitan128x128.png"
+            "imagenPequena" : "imagenes/Loki32x32.png",
+            "imagenGrande" : "imagenes/Loki128x128.png"
         },
         "descripcion" : "Crear view para listar Tareas",
-        "estado" : "LISTA",
-        "prioridad" : "BAJA"
+        "estado" : "HECHO",
+        "prioridad" : "MEDIA"
         },
                 {
         "tareaId": "5",
         "asignadoA": {
             "usuarioId" :"1",
-            "nombre" : "Steve Rogers",
+            "nombre" : "Phil Coulson",
             "puestoId" : "2",
-            "imagenPequena" : "imagenes/CaptainAmerica32x32.png",
-            "imagenGrande" : "imagenes/capitan128x128.png"
+            "imagenPequena" : "imagenes/AgentCoulson32x32.png",
+            "imagenGrande" : "imagenes/AgentCoulson128x128.png"
         },
         "descripcion" : "Crear view para listar Tareas",
         "estado" : "LISTA",
-        "prioridad" : "BAJA"
+        "prioridad" : "ALTA"
         }
         ];
         
