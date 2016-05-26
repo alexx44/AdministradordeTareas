@@ -13,15 +13,29 @@ app.run(function($httpBackend){
             "usuarioId" :"1",
             "nombre" : "Steve Rogers",
             "puestoId" : "2",
-            "imagenPequeña" : "imagenes/capitan32x32.png",
+            "imagenPequena" : "imagenes/CaptainAmerica32x32.png",
             "imagenGrande" : "imagenes/capitan128x128.png"
         },
         "descripcion" : "Crear view para listar Tareas",
         "estado" : "PENDIENTE",
         "prioridad" : "ALTA"
-        }];
+        },
+            {
+        "tareaId": "1",
+        "asignadoA": {
+            "usuarioId" :"1",
+            "nombre" : "Steve Rogers",
+            "puestoId" : "2",
+            "imagenPequena" : "imagenes/CaptainAmerica32x32.png",
+            "imagenGrande" : "imagenes/capitan128x128.png"
+        },
+        "descripcion" : "Crear view para listar Tareas",
+        "estado" : "LISTA",
+        "prioridad" : "MEDIA"
+        }
+        ];
         
-        var tareasUrl = "/api/tareas";
+        var tareasUrl = "/api/tarea";
         
         $httpBackend.whenGET(tareasUrl).respond(tareas);
         $httpBackend.whenGET(/paginas/).passThrough();

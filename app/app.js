@@ -16,7 +16,7 @@
                    .state("tareas",{
                           URL:"/tareas",
                           templateUrl: "paginas/tareas.html",
-                          controller: "TareasCtrl as vm"
+                          controller: "tareasCtrl as vm"
                        })
                    .state("nuevatarea",{
                           URL:"/nuevatarea",

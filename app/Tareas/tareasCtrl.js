@@ -5,9 +5,9 @@
     .module("AdministradordeTareas")
     .controller("tareasCtrl",
                ["tareasResource",
-                TareasCtrl]);
+                tareasCtrl]);
     
-    function TareasCtrl(tareasResource){
+    function tareasCtrl(tareasResource){
         var vm = this;
         var obtenerTareas = function(){
             tareasResource.query(function(data){
