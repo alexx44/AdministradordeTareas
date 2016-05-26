@@ -18,9 +18,9 @@
                           templateUrl: "paginas/tareas.html",
                           controller: "tareasCtrl as vm"
                        })
-                   .state("nuevatarea",{
-                          URL:"/nuevatarea",
-                          templateUrl: "paginas/nuevatarea.html"
+                   .state("usuarios",{
+                          URL:"/usuarios",
+                          templateUrl: "paginas/usuarios.html"
                        })
                    .state("estadisticas",{
                           URL:"/estadisticas",
