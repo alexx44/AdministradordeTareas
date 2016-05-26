@@ -1,4 +1,4 @@
-(funtion(){
+(function(){
  "use strict"
  
  var app = angular
@@ -23,8 +23,8 @@ app.run(function($httpBackend){
         
         var tareasUrl = "/api/tareas";
         
-        $httpBackend.whenGet(tareasUrl).respond(tareas);
-        $httpBackend.whenGet(/paginas/).passThrough();
+        $httpBackend.whenGET(tareasUrl).respond(tareas);
+        $httpBackend.whenGET(/paginas/).passThrough();
 
         
         });
