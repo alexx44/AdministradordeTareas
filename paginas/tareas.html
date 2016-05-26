@@ -27,9 +27,9 @@
                </td>
                <td>{{tarea.descripcion}}</td>
                <td>{{tarea.estado}}</td>
-               <td><img ng-src="{{tarea.asignadoA.imagenPequena}}" alt=""> Usuario 1</td>
+               <td><img ng-src="{{tarea.asignadoA.imagenPequena}}" alt=""> {{tarea.asignadoA.nombre}} </td>
                <td class="text-right">
-               <div class="col-md-12 text-center prioridad-baja">
+               <div class="col-md-12 text-center" ng-class="{'prioridad-alta': tarea.prioridad =='ALTA', 'prioridad-media': tarea.prioridad == 'MEDIA', 'prioridad-baja': tarea.prioridad =='BAJA'}">
                    {{tarea.prioridad}}
                </div>
                </td>
@@ -41,7 +41,7 @@
     
 </div>
 
-
+<!--
 <div ng-repeat="tarea in vm.tareas">
     {{tarea.descripcion}}
-</div>
+</div>-->

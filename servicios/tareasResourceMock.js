@@ -21,7 +21,20 @@ app.run(function($httpBackend){
         "prioridad" : "ALTA"
         },
             {
-        "tareaId": "1",
+        "tareaId": "2",
+        "asignadoA": {
+            "usuarioId" :"3",
+            "nombre" : "Tony Stark",
+            "puestoId" : "1",
+            "imagenPequena" : "imagenes/IronMan32x32.png",
+            "imagenGrande" : "imagenes/IronMan128x128.png"
+        },
+        "descripcion" : "Crear view para listar Tareas",
+        "estado" : "LISTA",
+        "prioridad" : "MEDIA"
+        },
+            {
+        "tareaId": "3",
         "asignadoA": {
             "usuarioId" :"1",
             "nombre" : "Steve Rogers",
@@ -31,7 +44,33 @@ app.run(function($httpBackend){
         },
         "descripcion" : "Crear view para listar Tareas",
         "estado" : "LISTA",
-        "prioridad" : "MEDIA"
+        "prioridad" : "BAJA"
+        },
+                {
+        "tareaId": "4",
+        "asignadoA": {
+            "usuarioId" :"1",
+            "nombre" : "Steve Rogers",
+            "puestoId" : "2",
+            "imagenPequena" : "imagenes/CaptainAmerica32x32.png",
+            "imagenGrande" : "imagenes/capitan128x128.png"
+        },
+        "descripcion" : "Crear view para listar Tareas",
+        "estado" : "LISTA",
+        "prioridad" : "BAJA"
+        },
+                {
+        "tareaId": "5",
+        "asignadoA": {
+            "usuarioId" :"1",
+            "nombre" : "Steve Rogers",
+            "puestoId" : "2",
+            "imagenPequena" : "imagenes/CaptainAmerica32x32.png",
+            "imagenGrande" : "imagenes/capitan128x128.png"
+        },
+        "descripcion" : "Crear view para listar Tareas",
+        "estado" : "LISTA",
+        "prioridad" : "BAJA"
         }
         ];
         
