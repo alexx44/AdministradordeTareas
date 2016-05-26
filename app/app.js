@@ -2,8 +2,9 @@
     "use strict";
     var app = angular.module("AdministradordeTareas",
                              ["ui.router",
-                             "common",
-                             "tareasResourceMock"]);
+                              "common",
+                              "tareasResourceMock",
+                              "usuariosResourceMock"]);
     
     app.config(["$stateProvider","$urlRouterProvider",
                function($stateProvider, $urlRouterProvider){
