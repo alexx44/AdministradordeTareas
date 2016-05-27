@@ -1,21 +1,21 @@
-(function(){
+(function() {
     "use strict";
     
     angular
     .module("AdministradordeTareas")
-    .controller("UsuariosCtrl",
-               ["usuariosResource", 
+    .controller("usuariosCtrl",
+               ["usuarioResource",
                 usuariosCtrl]);
     
     function usuariosCtrl(usuariosResource){
         var vm = this;
-        
         var obtenerUsuarios = function(){
             usuariosResource.query(function(data){
                 vm.usuarios = data;
-            });
+                 });
         }
         obtenerUsuarios();
+        
     }
     
-}());
+})();

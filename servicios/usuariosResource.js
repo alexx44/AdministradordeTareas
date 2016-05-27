@@ -5,6 +5,7 @@
     .factory("usuariosResource",
             ["$resource",
              usuariosResource]);
+    
     function usuariosResource($resource){
         return $resource("/api/usuarios/:usuarioId");
         

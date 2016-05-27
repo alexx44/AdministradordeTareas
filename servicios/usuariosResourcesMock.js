@@ -4,6 +4,7 @@
     var app = angular
     .module("usuariosResourceMock",
            ["ngMockE2E"]);
+    
     app.run(function($httpBackend){
         var usuarios =[{
             "usuarioId": "1",
