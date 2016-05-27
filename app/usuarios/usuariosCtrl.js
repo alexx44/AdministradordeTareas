@@ -4,7 +4,7 @@
     angular
     .module("AdministradordeTareas")
     .controller("usuariosCtrl",
-               ["usuarioResource",
+               ["usuariosResource",
                 usuariosCtrl]);
     
     function usuariosCtrl(usuariosResource){
