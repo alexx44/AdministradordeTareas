@@ -2,7 +2,7 @@
     "use strict";
     angular
     .module("common")
-    .factory("usuariosResources",
+    .factory("usuariosResource",
             ["$resource",
              usuariosResource]);
     function usuariosResource($resource){

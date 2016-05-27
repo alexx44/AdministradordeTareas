@@ -5,8 +5,9 @@
     .module("AdministradordeTareas")
     .controller("UsuariosCtrl",
                ["usuariosResource", 
-                UsuariosCtrl]);
-    function UsuariosCtrl(usuariosResource){
+                usuariosCtrl]);
+    
+    function usuariosCtrl(usuariosResource){
         var vm = this;
         
         var obtenerUsuarios = function(){
