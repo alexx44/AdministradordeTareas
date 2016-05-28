@@ -1,5 +1,15 @@
 <h1>Usuarios</h1>
 <hr>
+<div class="row">
+    <div class="col-md-1">
+        <a href="#" class="btn btn-success">
+            <span>Nuevo</span>
+        </a>
+    </div>
+    <div class="col-md-11 text-right">
+        <input type="text" ng-model="vm.buscar" placeholder="Buscar">
+    </div>
+</div>
 <div class="table-responsive">
    <table class="table table-hover">
       <thread>
@@ -13,7 +23,7 @@
           </tr>
       </thread>
        <tbody>
-            <tr ng-repeat="usuarios in vm.usuarios">
+            <tr ng-repeat="usuarios in vm.usuarios | filter:vm.buscar">
                <td>
                    <a href="#" class="btn btn-default">
                        <span class="glyphicon glyphicon-pencil"></span>
