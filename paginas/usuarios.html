@@ -2,7 +2,7 @@
 <hr>
 <div class="row">
     <div class="col-md-1">
-        <a href="#" class="btn btn-success">
+        <a href="#" class="btn btn-success" ng-click="vm.mostrarPanelUsuario(true)">
             <span>Nuevo</span>
         </a>
     </div>
@@ -42,4 +42,16 @@
        </tbody>
    </table>
     
+</div>
+
+
+<div ng-show="vm.panelUsuarioVisible">
+    <div class="overlay">
+        <div class="ventanaModal">
+           <div class="panelInfo">
+                <h1>Nuevo Usuarios</h1>
+                <p>Agregar aqui la info de Usuarios</p>
+            </div>
+        </div>
+    </div>
 </div>

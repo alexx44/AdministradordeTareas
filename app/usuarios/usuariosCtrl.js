@@ -19,6 +19,13 @@
         //Buscar Usuarios
         
         vm.buscar = "";
+        //Nuevo Usuario
+        vm.panelUsuarioVisible = false;
+        
+        vm.mostrarPanelUsuario = function(mostrar){
+            vm.panelUsuarioVisible = mostrar;
+            
+        }
         
     }
     
