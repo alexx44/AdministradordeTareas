@@ -7,7 +7,7 @@
             ["$resource",
             puestoResource]);
     
-    function puestoResource($resource){
+    function puestosResource($resource){
         return $resource("/api/puestos/:puestoId")
     }
 }());
