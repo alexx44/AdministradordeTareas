@@ -12,8 +12,8 @@
             "imagenGrande":"imagenes/AgentCoulson128x128.png"
         },{
             "descripcion":"BioMan",
-            "imagenPequena":"imagenes/AgentCoulson32x32.png",
-            "imagenGrande":"imagenes/AgentCoulson128x128.png"
+            "imagenPequena":"imagenes/bioman32x32.png",
+            "imagenGrande":"imagenes/bioman128x128.png"
         },{
             "descripcion":"Blue",
             "imagenPequena":"imagenes/AgentCoulson32x32.png",
@@ -96,8 +96,8 @@
             "imagenGrande":"imagenes/AgentCoulson128x128.png"
         },{
             "descripcion":"Viuda Negra",
-            "imagenPequena":"imagenes/AgentCoulson32x32.png",
-            "imagenGrande":"imagenes/AgentCoulson128x128.png"
+            "imagenPequena":"imagenes/BlackWidow32x32.png",
+            "imagenGrande":"imagenes/BlackWidow128x128.png"
         },{
             "descripcion":"Yellow",
             "imagenPequena":"imagenes/AgentCoulson32x32.png",
