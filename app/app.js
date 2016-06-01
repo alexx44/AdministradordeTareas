@@ -27,7 +27,7 @@
                         controller: "usuariosCtrl as vm"
                        })
                         .state("usuarios.usuario",{
-                        URL:"/usuario/:usuarioId",
+                        URL: "/usuario/:usuarioId",
                         templateUrl:"paginas/usuario.html",
                         controller:"usuariosCtrl as vm",
                         resolve:{
