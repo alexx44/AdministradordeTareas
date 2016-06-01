@@ -87,6 +87,27 @@
         var usuariosUrl = "/api/usuarios";
         
         $httpBackend.whenGET(usuariosUrl).respond(usuarios);
+        
+        var editarRegex = new RegExp(usuariosUrl + "/[0-9][0-9]*", '');
+        
+        $httpBackend.whenGET(editarRegex).respond(function(metod,url,data){
+            var usuario ={"usuarioId":0};
+            var parameters = url.split('/');
+            var length = parameters.length;
+            var id = parameters[length -1];
+            
+            if (id > 0) {
+                for (var i = 0; i < usuarios.length; i++){
+                    if(usuarios[i].usuarioId == id){
+                        usuario = usuarios[i];
+                        break;
+                    }
+                }
+                
+            }
+            return [200, usuario,{}];
+        })
+        
         $httpBackend.whenGET(/paginas/).passThrough();
         
     })

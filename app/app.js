@@ -4,7 +4,9 @@
                              ["ui.router",
                               "common",
                               "tareasResourceMock",
-                              "usuariosResourceMock"]);
+                              "usuariosResourceMock",
+                              "puestosResourceMock",
+                              "avatarsResourceMock"]);
     
     app.config(["$stateProvider","$urlRouterProvider",
                function($stateProvider, $urlRouterProvider){
@@ -24,6 +26,23 @@
                         templateUrl: "paginas/usuarios.html",
                         controller: "usuariosCtrl as vm"
                        })
+                        .state("usuarios.usuario",{
+                        URL:"/usuario/:usuarioId",
+                        templateUrl:"paginas/usuario.html",
+                        controller:"usuariosCtrl as vm",
+                        resolve:{
+                                usuarioResource: "usuariosResource",
+                                puestosResource: "puestosResource",
+                                usuario: function(usuariosResource, $stateParams){
+                                    var usuarioId = $stateParams.usuarioId;
+                                    return usuariosResource.get({usuarioId:usuarioId}).$promise;
+                                    },
+                                
+                                puestos: function(puestosResource){
+                                return puestosResource.query().$promise;
+                                }
+                                }
+                        })
                    .state("estadisticas",{
                         URL:"/estadisticas",
                         templateUrl: "paginas/estadisticas.html"

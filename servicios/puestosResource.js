@@ -5,7 +5,7 @@
     .module("common")
     .factory("puestosResource",
             ["$resource",
-            puestoResource]);
+            puestosResource]);
     
     function puestosResource($resource){
         return $resource("/api/puestos/:puestoId")
