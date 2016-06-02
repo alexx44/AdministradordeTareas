@@ -35,7 +35,7 @@
                                     puestosResource: "puestosResource",
                                     usuario : function(usuariosResource, $stateParams){
                                         var usuarioId = $stateParams.usuarioId;
-                                        return usuariosResource.get({usuarioId: usuarioId}).$promise;
+                                        return usuariosResource.query({usuarioId: usuarioId}).$promise;
                                             },
 
                                     puestos: function(puestosResource){
