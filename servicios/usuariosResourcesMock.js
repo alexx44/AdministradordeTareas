@@ -91,7 +91,7 @@
         var editarRegex = new RegExp(usuariosUrl + "/[0-9][0-9]*", '');
         
         $httpBackend.whenGET(editarRegex).respond(function(method, url, data){
-            var usuario ={"usuarioId" : 0};
+            var usuario ={"usuarioId": 0};
             var parameters = url.split('/');
             var length = parameters.length;
             var id = parameters[length -1];
