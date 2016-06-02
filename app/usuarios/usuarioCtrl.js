@@ -6,13 +6,13 @@
     .controller("usuarioCtrl",
                 ["usuario",
                  "puestos",
-                UsuarioCtrl]);
+                usuarioCtrl]);
     
-    function UsuarioCtrl(usuario, puestos){
+    function usuarioCtrl(usuario, puestos){
         var vm =this;
+        
         vm.usuario = usuario;
         vm.puestos = puestos;
         
     }
-    
-})
+}());
