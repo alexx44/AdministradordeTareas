@@ -1,4 +1,4 @@
-<h2>Editando Usuario</h2>
+<h2>Editando Usuario{{usuario.nombre}}</h2>
 <hr>
 <form role="form" name="usuarioForm" novalidate>
     <div class="row">
@@ -10,15 +10,32 @@
         </div>
         <div class="form-group col-md-offset-1 col-md-9">
             <label for="inputNombre">Nombre:</label>
-            <input type="text" class="form-control" id="inputNombre" placeholder="Nombre" required>
+            <input
+             type="text"
+             class="form-control"
+             id="inputNombre"
+             placeholder="Nombre"
+             required
+             ng-model="vm.usuario.nombre"
+             ng-minlength="4"
+             ng-maxlength="30">
         </div>
         <div class="form-group col-md-offset-1 col-md-9">
-            <label for="inputNombre">Puesto:</label>
-            <select name="selectPuesto" required class="form-control">
+            <label for="selectPuesto">Puesto:</label>
+            <select 
+            name="selectPuesto"
+            required
+            ng-model="vm.usuario.puestoId"
+            ng-options="puestoId as puesto.descripcion for puesto in vm.puestos"
+            class="form-control">
             </select>
         </div>
         <div class="form-group col-md-offset-3 col-md-9">
-            <button type="button" class="btn">Guardar</button>
+            <button 
+            type="button"
+            ng-disabled="usuarioForm.$invalid"
+            ng-class="{'btn-default':usuarioForm.$invalid, 'btn-info':usuarioForm.$valid}"
+            class="btn">Guardar</button>
             <button type="button" class="btn btn-danger" ng-click="vm.mostrarPanelUsuario(false)">Cancel</button>
         </div>
     </div>
