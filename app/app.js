@@ -36,11 +36,11 @@
                                     usuario : function(usuariosResource, $stateParams){
                                         var usuarioId = $stateParams.usuarioId;
                                         return usuariosResource.get({usuarioId : usuarioId}).$promise;
-                                        },
+                                            },
 
                                     puestos: function(puestosResource){
                                         return puestosResource.query().$promise;
-                                    }
+                                        }
                                     }
                             })
                    .state("estadisticas",{
