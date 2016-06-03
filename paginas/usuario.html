@@ -1,4 +1,4 @@
-<h2>Editando Usuario{{usuario.nombre}}</h2>
+<h2>Editando Usuario {{usuario.nombre}}</h2>
 <hr>
 <form role="form" name="usuarioForm" novalidate>
     <div class="row">
@@ -26,7 +26,7 @@
             name="selectPuesto"
             required
             ng-model="vm.usuario.puestoId"
-            ng-options="puestoId as puesto.descripcion for puesto in vm.puestos"
+            ng-options="puesto.puestoId as puesto.descripcion for puesto in vm.puestos"
             class="form-control">
             </select>
         </div>
@@ -36,7 +36,7 @@
             ng-disabled="usuarioForm.$invalid"
             ng-class="{'btn-default':usuarioForm.$invalid, 'btn-info':usuarioForm.$valid}"
             class="btn">Guardar</button>
-            <button type="button" class="btn btn-danger" ng-click="vm.mostrarPanelUsuario(false)">Cancel</button>
+            <button type="button" class="btn btn-danger" ng-click="vm.cancelar()">Cancel</button>
         </div>
     </div>
 

@@ -5,9 +5,10 @@
     .module("AdministradordeTareas")
     .controller("usuariosCtrl",
                ["usuariosResource",
+                "$rootScope"
                 usuariosCtrl]);
     
-    function usuariosCtrl(usuariosResource){
+    function usuariosCtrl(usuariosResource, $rootScope){
         var vm = this;
         //Obtener usuarios
         var obtenerUsuarios = function(){
@@ -26,7 +27,11 @@
             vm.panelUsuarioVisible = mostrar;
             
         }
-        
+       
+       $rootScope.$on('cancelarEdicionUsuario',function(event, args){
+           $vm.mostrarPanelUsuario(false);
+           
+       }) 
     }
     
 })();
