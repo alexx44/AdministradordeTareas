@@ -3,7 +3,7 @@
 <form role="form" name="usuarioForm" novalidate>
     <div class="row">
         <div class="col-md-2 text-center">
-            <a href="#">
+            <a ui-sref="usuarios.usuario.avatars({usuarioId: vm.usuario.usuarioId})">
                 <img src="imagenes/CaptainAmerica128x128.png" style="min-width:128px;min-height: 128px" />
                 <div class="text-center" style="min-width:128px;width 100%;">Cambiar Avatar</div>
             </a>
@@ -39,5 +39,5 @@
             <button type="button" class="btn btn-danger" ng-click="vm.cancelar()">Cancel</button>
         </div>
     </div>
-
+<div ui-view></div>
 </form>

@@ -5,7 +5,7 @@
     .module("AdministradordeTareas")
     .controller("usuariosCtrl",
                ["usuariosResource",
-                "$rootScope"
+                "$rootScope",
                 usuariosCtrl]);
     
     function usuariosCtrl(usuariosResource, $rootScope){
@@ -29,9 +29,9 @@
         }
        
        $rootScope.$on('cancelarEdicionUsuario',function(event, args){
-           $vm.mostrarPanelUsuario(false);
+           vm.mostrarPanelUsuario(false);
            
-       }) 
+       });
     }
     
 })();

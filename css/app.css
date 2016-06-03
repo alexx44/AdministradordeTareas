@@ -63,3 +63,8 @@ margin-bottom: 0px;
     overflow: auto;
     border-radius: 0px 0px 25px 25px; 
 }
+.avatar{
+    width: 42px;
+    float: left;
+    padding: 10px;
+}

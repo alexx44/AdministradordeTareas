@@ -43,6 +43,23 @@
                                         }
                                     }
                             })
+                               .state("usuarios.usuario.avatars",{
+                                    URL: "/avatars",
+                                    templateUrl: "paginas/avatars.html",
+                                    controller: "avatarsCtrl as vm",
+                                    resolve: {
+                                        avatarsResource : "avatarsResource",
+                                        usuariosResource: "usuariosResource",
+                                        avatars: function ( avatarsResource){
+                                            return avatarsResource.query().$promise;
+                                            
+                                        },
+                                        usuario: function(usuariosResource, $stateParams){
+                                            var usuarioId = $stateParams.usuarioId;
+                                            return usuarioResource.get({usuarioId: usuarioId}).$promise
+                                        }
+                                    }
+                               })
                    .state("estadisticas",{
                         URL:"/estadisticas",
                         templateUrl: "paginas/estadisticas.html"

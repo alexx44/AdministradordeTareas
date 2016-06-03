@@ -7,11 +7,11 @@
                 ["usuario",
                  "puestos",
                  "$rootScope",
-                 "$state"
+                 "$state",
                 usuarioCtrl]);
     
     function usuarioCtrl(usuario, puestos, $rootScope, $state){
-        var vm =this;
+        var vm = this;
         
         vm.usuario = usuario;
         vm.puestos = puestos;
