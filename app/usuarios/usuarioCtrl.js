@@ -20,6 +20,9 @@
             $rootScope.$emit('cancelarEdicionUsuario');
             $state.go('usuarios');
         }
-        
+        $rootScope.$on('cambiarAvatar',function(event, avatar){
+            vm.usuario.imagenPequena = avatar.imagenPequena;
+            vm.usuario.imagenGrande = avatar.imagenGrande;
+        });
     }
 }());

@@ -4,7 +4,7 @@
     <div class="row">
         <div class="col-md-2 text-center">
             <a ui-sref="usuarios.usuario.avatars({usuarioId: vm.usuario.usuarioId})">
-                <img src="imagenes/CaptainAmerica128x128.png" style="min-width:128px;min-height: 128px" />
+                <img ng-src="{{vm.usuario.imagenGrande}}" style="min-width:128px;min-height: 128px" />
                 <div class="text-center" style="min-width:128px;width 100%;">Cambiar Avatar</div>
             </a>
         </div>

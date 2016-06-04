@@ -13,6 +13,11 @@
         var vm = this;
         vm.avatars = avatars;
         vm.usuario = usuario;
+        
+        vm.cambiarAvatar = function (avatar){
+            $rootScope.$emit('cambiarAvatar',avatar);
+            
+        }
     }
     
 }());
