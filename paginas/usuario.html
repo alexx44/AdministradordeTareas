@@ -35,6 +35,7 @@
             type="button"
             ng-disabled="usuarioForm.$invalid"
             ng-class="{'btn-default':usuarioForm.$invalid, 'btn-info':usuarioForm.$valid}"
+            ng-click="vm.guardar(usuarioForm.$valid)"
             class="btn">Guardar</button>
             <button type="button" class="btn btn-danger" ng-click="vm.cancelar()">Cancel</button>
         </div>
