@@ -119,7 +119,8 @@
                 usuario.usuarioId = 1    
                 }
                 usuarios.push(usuario);
-            } else {
+            }
+            else {
                 //Actualizar Usuario
                 for (var i = 0; i < usuarios.length; i++){
                     if (usuarios[i].usuarioId == usuario.usuarioId){

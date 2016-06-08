@@ -23,14 +23,16 @@
         $rootScope.$on('cambiarAvatar',function(event, avatar){
             vm.usuario.imagenPequena = avatar.imagenPequena;
             vm.usuario.imagenGrande = avatar.imagenGrande;
-        });
-        vm.guardar = function(esValido){
-            if (esValido){
-                vm.usuario.$save(function(data){
-               alert('Usuario Actualizado');
-            });
-        }else{
-            alert('Corrija los errores antes de actualizar')
+        })
         
-        }}
+        vm.guardar = function (esValido) {
+            if (esValido){
+                vm.usuario.save(function(data){
+               alert('Usuario Actualizado!');
+            })
+        }else{
+            alert('Corrija los errores antes de actualizar');
+        }
+    }
+}
 })();
