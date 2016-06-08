@@ -25,9 +25,9 @@
             vm.usuario.imagenGrande = avatar.imagenGrande;
         })
         
-        vm.guardar = function (esValido) {
+        
+        vm.guardar = function(esValido) {
             if (esValido){
-                vm.usuario.save(function(data){
                alert('Usuario Actualizado!');
             })
         }else{
