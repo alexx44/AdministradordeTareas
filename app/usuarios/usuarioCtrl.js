@@ -28,6 +28,7 @@
         
         vm.guardar = function(esValido) {
             if (esValido){
+                vm.usuario.$save(function (data) {
                alert('Usuario Actualizado!');
             })
         }else{
