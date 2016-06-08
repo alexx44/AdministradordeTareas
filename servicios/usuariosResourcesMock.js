@@ -20,7 +20,7 @@
             "imagenPequena": "imagenes/Thor32x32.png",
             "imagengrande": "imagenes/Thor128x128.png"
         },
-                      {
+         {
             "usuarioId": "3",
             "nombre": "Tony Stark",
             "puestoId": "1",
@@ -34,7 +34,7 @@
             "imagenPequena": "imagenes/BlackWidow32x32.png",
             "imagengrande": "imagenes/BlackWidow128x128.png"
         },
-                      {
+         {
             "usuarioId": "5",
             "nombre": "Henry Jonathan Hank",
             "puestoId": "4",
@@ -48,7 +48,7 @@
             "imagenPequena": "imagenes/NickFury32x32.png",
             "imagengrande": "imagenes/NickFury128x128.png"
         },
-                      {
+         {
             "usuarioId": "7",
             "nombre": "Bruce Banner",
             "puestoId": "4",
@@ -62,7 +62,7 @@
             "imagenPequena": "imagenes/Loki32x32.png",
             "imagengrande": "imagenes/Loki128x128.png"
         },
-            {
+         {
             "usuarioId": "9",
             "nombre": "Phil Coulson",
             "puestoId": "5",
