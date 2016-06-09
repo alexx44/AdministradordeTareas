@@ -106,7 +106,7 @@
                 
             }
             return [200, usuario,{}];
-        })
+        });
         
         $httpBackend.whenPOST(usuariosUrl).respond(function(method, url, data){
             var usuario = angular.fromJson(data);
@@ -116,7 +116,7 @@
                 if ( usuarios.length - 1 >= 0){
                     usuario.usuarioId = parseInt(usuarios[usuarios.length -1].usuarioId) + 1;
                 }else{
-                usuario.usuarioId = 1    
+                usuario.usuarioId = 1;  
                 }
                 usuarios.push(usuario);
             }
@@ -134,5 +134,5 @@
         
         $httpBackend.whenGET(/paginas/).passThrough();
         
-    })
+    });
 }());
