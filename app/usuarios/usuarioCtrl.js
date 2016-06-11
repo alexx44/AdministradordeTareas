@@ -23,17 +23,14 @@
         $rootScope.$on('cambiarAvatar',function(event, avatar){
             vm.usuario.imagenPequena = avatar.imagenPequena;
             vm.usuario.imagenGrande = avatar.imagenGrande;
-        })
+        });
         
-        
-        vm.guardar = function(esValido) {
+        vm.guardar = function(esValido){
             if (esValido){
-                vm.usuario.$save(function (data) {
-               alert('Usuario Actualizado!');
-            })
-        }else{
-            alert('Corrija los errores antes de actualizar');
-        }
-    }
+                    alert('Usuario Actualizado!'); 
+                                    
+                //Evento para actualizar la Lista de Usuarios
+                    $rootScope.$emit('actualizarListaUsuarios');
+                    $state.go('usuarios');
 }
 })();
