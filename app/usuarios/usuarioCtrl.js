@@ -27,10 +27,18 @@
         
         vm.guardar = function(esValido){
             if (esValido){
+                vm.usuario.save(function (data) {
                     alert('Usuario Actualizado!'); 
                                     
                 //Evento para actualizar la Lista de Usuarios
                     $rootScope.$emit('actualizarListaUsuarios');
                     $state.go('usuarios');
+                });
+
+            }else{
+              alert('Corrija los errores antes de actualizar');  
+            }
+
 }
+    }
 })();
