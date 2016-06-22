@@ -28,7 +28,7 @@
             
         }
        
-       $rootScope.$on('cancelarEdicionUsuario',function(event, args){
+       $rootScope.$on('cancelarEdicionUsuario', function(event, args){
            vm.mostrarPanelUsuario(false);
            
        });

@@ -12,7 +12,7 @@
     
     function usuarioCtrl(usuario, puestos, $rootScope, $state){
         var vm = this;
-        
+
         vm.usuario = usuario;
         vm.puestos = puestos;
         
@@ -27,13 +27,14 @@
         
         vm.guardar = function(esValido){
             if (esValido){
-                vm.usuario.push(function (data) {
+                
+                vm.usuario.$save(function(data){
                     alert('Usuario Actualizado!'); 
                                     
                 //Evento para actualizar la Lista de Usuarios
                     $rootScope.$emit('actualizarListaUsuarios');
                     $state.go('usuarios');
-              } );
+              } )
 
             }else{
               alert('Corrija los errores antes de actualizar');  
@@ -41,4 +42,4 @@
 
 }
     }
-})();
+}());
