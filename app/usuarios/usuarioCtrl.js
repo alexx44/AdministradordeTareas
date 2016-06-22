@@ -27,10 +27,7 @@
         
         vm.guardar = function(esValido){
             if (esValido){
-     //           var usu = new usuario(data);
-    //            usu.$save();
-                
-                vm.usuario.$save(function () {
+                vm.usuario.push(function (data) {
                     alert('Usuario Actualizado!'); 
                                     
                 //Evento para actualizar la Lista de Usuarios

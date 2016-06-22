@@ -34,7 +34,7 @@
        });
         $rootScope.$on('actualizarListaUsuarios', function(event, args){
            obtenerUsuarios();
-            vm.mostrarPanelUsuario('false');
+            vm.mostrarPanelUsuario(false);
         });
     }
     
