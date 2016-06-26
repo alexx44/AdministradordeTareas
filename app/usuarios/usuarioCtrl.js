@@ -28,7 +28,7 @@
         vm.guardar = function(esValido){
             if (esValido){
                 console.log('PASO LA VALIDACION')
-                console.log(vm.usuario.$save());
+         //       console.log(vm.usuario.$save());
                 
                 vm.usuario.$save(function(data){
                     alert('Usuario Actualizado!'); 
