@@ -42,6 +42,6 @@
               alert('Corrija los errores antes de actualizar');  
             }
 
-}
+        }
     }
 }());
